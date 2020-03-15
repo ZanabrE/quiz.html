@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>A Simple Quiz</title>
+	<link href="quiz.css" rel="stylesheet">
+	
+	<script>
+	function theQuiz() {
+	var score =0;
+	var questions = [
+		['What is the official name for the virus?', 'COVID-19'],
+		['Can this virus kill people?', 'yes'],
+		['What are the symptoms of this deadly virus?', 'fever, cough, breath shortness'],
+		['What are the recommendations to prevent it?', 'wash hands, no hand contact to eyes, mouth, and nose']
+		
+	];
+
+
+	function theQuiz(question) {
+		var answer = prompt(question[0],'');
+		if (answer == question[1]) {
+			alert('Correct!');
+			score++;
+		}
+		else {
+			alert('Sorry. The correct answer is ' + question[1]);
+		}
+	}
+
+	for(var i =0; i < questions.length; i++) {
+	
+		theQuiz(questions[i]);
+	}
+	
+	var message = 'You got ' + score;
+	message += ' out of ' + questions.length;
+	message += ' questions correct.';
+	document.write('<p>' + message + '</p>');
+	
+	
+	}
+	</script>
+	<!--
+	Ernesto L Zanabria Saturday, March 14, 2020.
+	-->
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<p class="logo">JavaScript <i>&amp;</i> jQuery <i class="mm">The <br>
+			Missing<br>
+			Manual</i></p>
+		</div>
+		<div class="content">
+			<div class="main">
+				<h1><img src="coronavirus.png" alt="coronavirus" style="width:100%"></h1>
+				<h2>THE OUTBREAK DISEASE CORONAVIRUS (COVID-19)</h2>
+				<p>There is an outbreak that is affecting our health and no many people know about this
+				disease the symptoms and how deadly could be for humans this deadly disease its called 
+				<em>CORONAVIRUS (COVID-19)</em> and spread across the globe and still spreading some 
+				people don't have an idea how dangerous this virus is and its symptoms which is different
+				than a regular cold, or flu. At work are several patients concerned about this disease 
+				afraid that their medications could be contaminate or asking about our supply which we 
+				have a team that actively monitors very close with the current international and domestic 
+				environment for <em>COVID-19</em> with the help of <em>FDA (Food &amp; Drug Administration)</em>
+				that also is monitoring closely. Here are the symptoms of the cold, which some of the 
+				symptoms are: Sneezing, Stuffy or runny nose, Sore throat, Coughing, Post-nasal drip, Watery eyes,
+				and Fever (which is rare on most people). Which cold symptoms last for up to 10 days to 14 
+				days after that period we get better. In the other hand <em>Coronavirus</em> symptoms 
+				are: Fever, Cough, Shortness of breath which are severe some people have mild symptoms, 
+				which are: Sore throat and runny nose, some of them Diarrhea, Nausea, and vomiting. The sever
+				symptoms will kill people after 14 days. It is recommend that you wash your hands often with
+				soap and water for at least 20 seconds, do not touch your eyes, nose or mouth with unwashed
+				hands, avoid close contact with people who are sick, stay home if you are sick, and disinfect
+				frequently after in contact with objects and surfaces.</p>
+				
+				
+				<p class="button">
+					<button onclick="theQuiz()">Quiz Me</button>
+				</p>
+			</div>	
+			
+		</div>
+		
+		<!--<script src="quiz.js"></script>-->
+		<div class="footer">
+			<p>Copyright &copy; 2020 Ernesto L Zanabria, All Rights Reserved. COMMUNITY COLLEGE OF RHODE ISLAND</p>
+		</div>
+	</div>
+</body>
+</html>
