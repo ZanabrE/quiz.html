@@ -1,0 +1,64 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-family: times;
+	
+}
+
+.wrapper {
+	background-color: rgba(193, 27, 23, 0.3);
+	
+}
+
+.header {
+	font-size: 20pt;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.3);
+	text-shadow: 0 0 3px red, 0 0 5px red;
+	
+}
+
+.main {
+	font-family: times;
+	font-size: 14pt;
+	
+}
+
+.main h2 {
+	font-size: 18pt;
+	text-shadow: 0 0 3px red, 0 0 5px red;
+	text-align: center;
+}
+
+.main p {
+	text-align: center;
+	margin: 50px;
+}
+
+.main em {
+	font-style: bold;
+	font-family: helvatica;
+	
+}
+
+
+.button button {
+	font-size: 16pt;
+	text-shadow: 0 0 3px red, 0 0 5px red;
+}
+
+
+
+
+
+.footer {
+	font-size: 16pt;
+	text-align: center;
+	background-color: rgba(255, 0, 0, 0.3);
+	padding: 20px;
+}
